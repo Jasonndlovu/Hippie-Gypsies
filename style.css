@@ -1,0 +1,129 @@
+body {
+  font-family: "Lato", "Arial", "sans-serif";
+  text-rendering: optimizeLegibility;
+ 
+}
+
+/* Add custom properties for colors */
+:root {
+
+  --background-color: #000000;
+  --primary-color: #FFFFFF;
+  --accent-color: #808080;
+  --text-color: #FFFFFF;
+
+  --primary-100: #FFFFFF;
+  --primary-200: #e0e0e0;
+  --primary-300: #9b9b9b;
+  --accent-100: #808080;
+  --accent-200: #2b2b2b;
+  --text-100: #FFFFFF;
+  --text-200: #e0e0e0;
+  --bg-100: #000000;
+  --bg-200: #161616;
+  --bg-300: #2c2c2c;
+}
+
+p {
+  color: var(--text-200); /* Use custom property for text color */
+  font-weight: 300;
+  font-size: 1.1em;
+  line-height: 160%;
+}
+
+/* Other styles using custom properties */
+.section-header {
+  /* background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(https://images.unsplash.com/photo-1547413749-dd39525702cd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80);
+  background-size: cover;
+  background-position: bottom; */
+  background-color: #FFFFFF;
+  height: calc(100vh - 56px);
+  background-attachment: fixed;
+}
+
+.section-header h1 {
+  font-size: 8rem;
+  letter-spacing: 0.2em;
+  color: var(--text-100); /* Use custom property for text color */
+}
+
+.section-header h2 {
+  font-size: 3.2rem;
+  letter-spacing: 0.1em;
+  color: var(--text-100); /* Use custom property for text color */
+}
+
+.navbar {
+  background-color: var(--bg-200); /* Use custom property for background color */
+}
+
+.section-features h3 {
+  font-size: 1.4em;
+  font-weight: 300;
+}
+
+.red {
+  color: red;
+}
+
+.purple {
+  color: var(--accent-color);
+}
+
+.heading-textbox:after {
+  display: block;
+  height: 2px;
+  background-color: #808080;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.hero-text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-box {
+  width: 100%;
+  margin: 0;
+  /*   font-size: 0; */
+  background-color: #000;
+  overflow: hidden;
+}
+
+.img-box img {
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.img-box img:hover {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media (max-width: 900px) {
+  .section-header h1 {
+    font-size: 4.4em;
+    letter-spacing: 0.10em;
+  }
+
+  .section-header h2 {
+    font-size: 1.6em;
+    letter-spacing: 0.05em;
+  }
+}
+
+body {
+  background-color: var(--background-color);
+}
