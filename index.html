@@ -50,7 +50,7 @@
         function addVideoWithDelay() {
           setTimeout(function () {
             var videoContainer = document.createElement('div');
-            videoContainer.innerHTML = '<video autoplay muted loop id="myVideo" width="100%"> <source src="./videos/Video.mp4" type="video/mp4"> </video>';
+            videoContainer.innerHTML = '<video autoplay muted loop playsinline id="myVideo" width="100%"> <source src="./videos/Video.mp4" type="video/mp4"> </video>';
             document.querySelector('.hero-text-box').replaceWith(videoContainer);
           }, 2000); // Adjust the delay in milliseconds (e.g., 3000 = 3 seconds)
         }
@@ -81,7 +81,7 @@
     <div class="modal-content">
      
       <div class="modal-body" style="padding: 0%;">
-        <video autoplay muted loop id="myVideo" width="100%">
+        <video autoplay muted loop playsinline id="myVideo" width="100%">
           <source src="./videos/Video.mp4" type="video/mp4">
       </video>
       </div>
