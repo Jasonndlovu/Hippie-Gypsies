@@ -117,23 +117,33 @@
 
 
 
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-  <div class="container container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="./images/image00001-removebg-preview white.png" alt=""  height="34" class="d-inline-block align-text-center">
-      <!-- Hippie 
-      
-      <img src="./images/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-center">Gypsies -->
+
+
+<!-- new nav -->
+
+<!-- This code is dynamically created with the Learning Kit for the course 'Master Bootstrap 5' from Frontend Workshop. The course is available on frontendworkshop.com -->
+
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg sticky-top">
+	<div class="container">
+
+		<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarResponsiveLeft" aria-controls="navbarResponsiveLeft" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<a href="#" class="navbar-brand ms-4 me-auto ms-lg-0 me-lg-0"><img src="./images/image00001-removebg-preview white.png" alt=""  height="34" class="d-inline-block align-text-center">
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class=" collapse navbar-collapse " id="navbarSupportedContent">
-      <ul class=" navbar-nav me-auto mb-2 mb-lg-0 ">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        
+
+		<div class="collapse navbar-collapse flex-grow-0 order-1 order-lg-0" id="navbarResponsiveLeft">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="nav-link active" aria-current="page">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Contact</a>
+				</li>
+				<!-- <li class="nav-item">
+					<a href="#" class="nav-link">Link</a>
+				</li> -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
            Shop now
@@ -149,26 +159,19 @@
             <li><a class="dropdown-item" href="#">Coming soon</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="#"><h4><i class="bi bi-cart3"></i></h4>
-        </a>
-      </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li> -->
-      </ul>
+			</ul>
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-light" type="button">Search</button>
       </form>
-     
-      
-    </div>
-  </div>
+		</div>
+
+		<a href="#" class="navbar-brand"><i class="bi bi-cart3"></i></a>
+
+	</div>
 </nav>
 
+<!-- end of new nav -->
 <section class="section-features bg-dark pt-5">
   <div class="container">
     <div class="row pt-5">
